@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram - Clone Coding</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/default.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/feed.css">
+  <script src="assets/js/heart.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="gnb flex-row">
+    <div class="gnb-content flex-row">
+      <div class="logo flex-row">
+        <img width="102" src="assets/image/logo_instagram.png">
+        <i class="bi bi-chevron-down"></i>
+      </div>
+      <div class="search-box flex-row">
+        <input type="text" placeholder="Search">
+      </div>
+      <div class="icons flex-row">
+        <img src="assets/image/icons/1.png">
+        <img src="assets/image/icons/2.png">
+        <img src="assets/image/icons/3.png">
+        <img src="assets/image/icons/4.png">
+        <img src="assets/image/icons/5.png">
+        <img class="img-wrap" width="32" src="assets/image/icons/6.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="main flex-row">
+    <div class="post flex-col">
+      <div class="profile flex-row">
+        <div class="img-wrap">
+          <img width="32" src="assets/image/profile/1.png">
+        </div>
+        <p class="flex-col">
+          <span>museid.acg</span>
+          <span>Jakarta, Indonesia</span>
+        </p>
+        <img width="20" src="assets/image/icons/7.png">
+      </div>
+      <div class="imgs swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/image/post/1.png"></div>
+          <div class="swiper-slide"><img src="assets/image/post/2.png"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="post-icons flex-row">
+        <img id="heart" onclick="like()" src="assets/image/icons/5.png">
+        <img src="assets/image/icons/9.png">
+        <img src="assets/image/icons/2.png">
+        <img src="assets/image/icons/10.png">
+      </div>
+      <div class="likes">
+        849 likes
+      </div>
+      <div class="comments">
+        <span class="title">museid.acg</span>
+        Anime "Summoned to Another World… Again?!" Merilis visual terbaru!
+        <br>
+        <br>
+        <br>
+        Anime isekai komedi tersebut akan tayang mulai bulan April 2023.
+        <span class="hashtag">#ACG_News</span>
+        <span class="hashtag">#New_Anime</span>
+        <span class="hashtag">#SpartaCodingClub</span>
+        <span class="hashtag">#CloneCoding</span>
+        <span class="hashtag">#Instagram</span>
+        <span class="hashtag">#LearningX</span>
+      </div>
+      <div class="count">
+        View all 169 comments
+      </div>
+      <div class="time">
+        23 HOURS AGO
+      </div>
+    </div>
+    <div class="account flex-col">
+      <div class="account-content">
+        <li class="flex-row">
+          <div class="img-wrap">
+            <img width="56" src="assets/image/icons/6.png">
+          </div>
+          <p class="flex-col">
+            <span>bdnxyyyy</span>
+            <span>Bodenxyyy</span>
+          </p>
+          <a href="#">Switch</a>
+        </li>
+        <li class="flex-row suggestion">
+          <span>Suggestion for you</span>
+          <a href="#">See All</a>
+        </li>
+        <li class="flex-row">
+          <div class="img-wrap">
+            <img width="32" src="assets/image/follower/1.png">
+          </div>
+          <p class="flex-col">
+            <span>sfaisaa</span>
+            <span>Followed by shhh_aal + 4 more</span>
+          </p>
+          <a href="#">Follow</a>
+        </li>
+        <li class="flex-row">
+          <div class="img-wrap">
+            <img width="32" src="assets/image/follower/2.png">
+          </div>
+          <p class="flex-col">
+            <span>agrls.3</span>
+            <span>Followed by yusuf_nugraha01 + 4 more</span>
+          </p>
+          <a href="#">Follow</a>
+        </li>
+        <li class="flex-row">
+          <div class="img-wrap">
+            <img width="32" src="assets/image/follower/3.png">
+          </div>
+          <p class="flex-col">
+            <span>dd_al9299</span>
+            <span>Followed by ssbastt</span>
+          </p>
+          <a href="#">Follow</a>
+        </li>
+        <li class="flex-row">
+          <div class="img-wrap">
+            <img width="32" src="assets/image/follower/4.png">
+          </div>
+          <p class="flex-col">
+            <span>y9y43</span>
+            <span>Followed by yusuf_nugraha01</span>
+          </p>
+          <a href="#">Follow</a>
+        </li>
+        <li class="flex-row">
+          <div class="img-wrap">
+            <img width="32" src="assets/image/follower/5.png">
+          </div>
+          <p class="flex-col">
+            <span>azka_pramuzi</span>
+            <span>Followed by shhh_aal + 1 more</span>
+          </p>
+          <a href="#">Follow</a>
+        </li>
+      </div>
+      <div class="about">
+        <a href="#">About</a>
+        <a href="#">Help</a>
+        <a href="#">Press</a>
+        <a href="#">API</a>
+        <a href="#">Jobs</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Locations</a>
+        <a href="#">Language</a>
+        <a href="#">English</a>
+      </div>
+      <div class="name">
+        © 2023 INSTAGRAM FROM META
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/swiper.js"></script>
+</body>
+
+</html>
